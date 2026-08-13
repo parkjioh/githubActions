@@ -56,6 +56,6 @@ jobs:
           
           docker build --platform linux/arm64 -t $IMAGE_URI:$SHORT_SHA .
           
-          docker push @IMAGE_URI:$SHORT_SHA
+          docker push $IMAGE_URI:$SHORT_SHA
           
           echo "✅ Pushed: $IMAGE_URI:$SHORT_SHA"
